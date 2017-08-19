@@ -1,0 +1,32 @@
+{
+  "name": "tripplanner",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start:dev": "webpack -w & nodemon server/app.js",
+    "start": "npm run start:dev"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^2.10.2",
+    "body-parser": "^1.13.3",
+    "bootstrap": "3.3.5",
+    "express": "^4.13.3",
+    "mapbox-gl": "^0.39.1",
+    "nunjucks": "^2.5.2",
+    "pg": "^4.5.5",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.4.0",
+    "volleyball": "^1.4.1"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.10.1",
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.4.1",
+    "sass-loader": "^6.0.6",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.5.3"
+  }
+}

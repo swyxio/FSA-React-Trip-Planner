@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Title of the document</title>
+  <link rel="stylesheet" href="./bundle.css">
+  <script src="./bundle.js" defer></script>
+</head>
+
+<body>
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      <a class="navbar-brand clearfix" href="/"><span class="glyphicon glyphicon-map-marker"></span><span>Trip Planner</span></a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="app" class="clearfix">
+    <div class="map-container col-sm-8 col-lg-9">
+      <div>
+        <div id="map-canvas"></div>
+      </div>
+    </div>
+    <div id="control-panel" class="col-sm-4 col-lg-3 clearfix">
+      <div class="col-xs-6 col-sm-12">
+        <div class="panel panel-default">
+          <div class="panel-body" id="options-panel">
+            <div>
+              <h4>Hotels</h4>
+              <select id="hotels-choices">
+            </select>
+              <button id="hotels-add" class="btn btn-primary btn-circle pull-right">+</button>
+            </div>
+            <div>
+              <h4>Restaurants</h4>
+              <select id="restaurants-choices">
+            </select>
+              <button id="restaurants-add" class="btn btn-primary btn-circle pull-right">+</button>
+            </div>
+            <div>
+              <h4>Activities</h4>
+              <select id="activities-choices">
+            </select>
+              <button id="activities-add" class="btn btn-primary btn-circle pull-right">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-12">
+
+        <div class="panel panel-default">
+
+          <div class="panel-body" id="itinerary">
+            <div>
+              <h4>My Hotel</h4>
+              <ul class="list-group" id="hotels-list">
+
+              </ul>
+            </div>
+            <div>
+              <h4>My Restaurants</h4>
+              <ul class="list-group" id="restaurants-list">
+
+              </ul>
+            </div>
+            <div>
+              <h4>My Activities</h4>
+              <ul class="list-group" id="activities-list">
+
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
