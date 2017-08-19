@@ -1,6 +1,10 @@
 # REACT TRIP PLANNER
 
-An FSA student-led workshop by [@swyx](http://swyx.io)
+An FSA student-led workshop by [@swyx](http://swyx.io). 
+
+Lecture Videos:
+- Section 0 and A: <https://www.youtube.com/watch?v=M6rL0PXxPHs> - is a live coding session with 2 students, a lot happens offscreen sorry
+- Section B: <https://youtu.be/L0xjeFq7IzY> - is a review and demonstration session, so its much more concise!
 
 The goal of this project is to familiarize FSA students with React by completely refactoring an old, familiar project to use React.
 
