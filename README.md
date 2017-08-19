@@ -13,11 +13,18 @@ We start with the official final solution to the Trip Planner - Live workshop, c
 Shall we begin?
 
 ---
-
-Table of Contents
+High level Table of Contents
 =================
 
-   * [REACT TRIP PLANNER](#react-trip-planner)
+* [SECTION 0: SETUP](#section-0-setup) gets you from "no React" to "hello world".
+* [SECTION A: PORTING THE HTML/USER INTERFACE](#section-a-porting-the-htmluser-interface) ports the user interface from old trip planner to react, but has none of the functionality
+* [SECTION B: PORTING THE JAVASCRIPT](#section-b-porting-the-javascript) ports the javascript functionality from the old trip planner to react
+
+---
+
+Full Table of Contents
+=================
+
    * [Steps to convert FSA Trip Planner-Live to React Trip Planner](#steps-to-convert-fsa-trip-planner-live-to-react-trip-planner)
       * [SECTION 0: SETUP](#section-0-setup)
          * [SETUP](#setup)
