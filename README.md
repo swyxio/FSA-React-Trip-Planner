@@ -1,3 +1,17 @@
+# REACT TRIP PLANNER
+
+An FSA student-led workshop by [@swyx](http://swyx.io)
+
+The goal of this project is to familiarize FSA students with React by completely refactoring an old, familiar project to use React.
+
+The Trip Planner is an ideal candidate to do this exercise because 1) it already uses webpack, 2) it already uses internal state, 3) it has components that need to talk to each other and also render app state.
+
+Because React is purely a front-end framework, we will not need to touch any of the backend nor the CSS. We will only be editing the clientside javascript and to a lesser extent the base index.html.
+
+Shall we begin?
+
+---
+
 # Steps to convert FSA Trip Planner-Live to React Trip Planner
 
 SECTION 0: SETUP
