@@ -98,7 +98,7 @@ import ReactDOM from 'react-dom'
 ReactDOM.render(<h1>Hello world</h1>, document.getElementById('app'))
 ```
 
-Step 4. Comment out `index.html` so that the <body> only has one <div id='myApp'></div>
+Step 4. Comment out `index.html` so that the `<body>` only has one `<div id='myApp'></div>`
 
 Step 5. Switch the webpack entry point from `./client/index.js` to `./browser/Main.js`
 
@@ -149,7 +149,7 @@ Step 1. Port over the Maps html to Map.js and import Map to Main.js. elevate the
 
 Step 2. Why is the map not rendering?? oh, right. it uses javascript. Port that over from the old `client/index.js`. Port just enough so that the map shows up, nothing more.
 
-Hint: if you try to stick `mapboxgl.Map` into the `render()` function, you get an error because `map-canvas` doesn't yet exist on first render. What is a good lifecycle hook to use to call javascript only AFTER a component has rendered?
+Hint: if you try to stick `mapboxgl.Map` into the `render()` function, you get an error because `map-canvas` doesn't yet exist on first render. What is [a good lifecycle hook](https://facebook.github.io/react/docs/react-component.html) to use to call javascript only AFTER a component has rendered?
 
 ### PANEL COMPONENT
 
@@ -159,7 +159,16 @@ You should at this point have a fully recreated UI of Trip Planner done in React
 
 # IMPORTANT NOTE BEFORE SECTION B
 
-Do not get trapped into trying to copy+paste from the old javascript into your new React code. the old javascript relied on updating `state` and creating and destroying DOM components every change you made. In React, `this.state` simply contains your current data state, `render()` renders your JSX according to the data in `this.state`, and the only way you trigger a re-render is by calling `this.setState()` which then calls `render()` again based on your new state. This is called "one way data flow" - you NEVER, EVER, directly manipulate `this.state` anywhere in your code except in the constructor. You only update state with `this.setState`, which allows you to get the benefits of re-rendering and DOM-diffing that you would otherwise have to program manually like you did in the old javascript.
+Do not get trapped into trying to copy+paste from the old javascript into your new React code. the old javascript relied on updating `state` and creating and destroying DOM components every change you made. In React, `this.state` simply contains your current data state, `render()` renders your JSX according to the data in `this.state`, and the only way you trigger a re-render is by calling `this.setState()` which then calls `render()` again based on your new state. This is called "one way data flow" - you NEVER, EVER, directly manipulate `this.state` anywhere in your code except in the constructor. Repeating for emphasis: you 
+
+**NEVER**, 
+
+**EVER**, 
+
+directly manipulate `this.state` anywhere in your code outside the constructor.
+
+
+You only update state with `this.setState`, which allows you to get the benefits of re-rendering and DOM-diffing that you would otherwise have to program manually like you did in the old javascript.
 
 
 SECTION B: PORTING THE JAVASCRIPT
