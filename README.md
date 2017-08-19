@@ -102,12 +102,12 @@ Step 3. Fill out `browser/index.js` with basic React and ReactDom scaffolding:
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-ReactDOM.render(<h1>Hello world</h1>, document.getElementById('app'))
+ReactDOM.render(<h1>Hello world</h1>, document.getElementById('myApp'))
 ```
 
 Step 4. Comment out `index.html` so that the `<body>` only has one `<div id='myApp'></div>`
 
-Step 5. Switch the webpack entry point from `./client/index.js` to `./browser/Main.js`
+Step 5. Switch the webpack entry point from `./client/index.js` to `./browser/index.js`
 
 `npm start` to see your new clean React app!
 
