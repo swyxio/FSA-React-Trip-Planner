@@ -8,7 +8,34 @@ The Trip Planner is an ideal candidate to do this exercise because 1) it already
 
 Because React is purely a front-end framework, we will not need to touch any of the backend nor the CSS. We will only be editing the clientside javascript and to a lesser extent the base index.html.
 
+We start with the official final solution to the Trip Planner - Live workshop, contained in the `tripplanner-live-STARTHERE` folder. We will end with a Reactified version, which is in the `react-tripplanner-live-ENDHERE` folder.
+
 Shall we begin?
+
+---
+
+Table of Contents
+=================
+
+   * [REACT TRIP PLANNER](#react-trip-planner)
+   * [Steps to convert FSA Trip Planner-Live to React Trip Planner](#steps-to-convert-fsa-trip-planner-live-to-react-trip-planner)
+      * [SECTION 0: SETUP](#section-0-setup)
+         * [SETUP](#setup)
+         * [CONFIGURE WEBPACK FOR REACT AND BABEL](#configure-webpack-for-react-and-babel)
+         * [INSTALL REACT AND REACT-DOM](#install-react-and-react-dom)
+      * [SECTION A: PORTING THE HTML/USER INTERFACE](#section-a-porting-the-htmluser-interface)
+         * [MAIN COMPONENT](#main-component)
+         * [NAVBAR COMPONENT](#navbar-component)
+         * [MAP COMPONENT](#map-component)
+         * [PANEL COMPONENT](#panel-component)
+   * [IMPORTANT NOTE BEFORE SECTION B](#important-note-before-section-b)
+      * [SECTION B: PORTING THE JAVASCRIPT](#section-b-porting-the-javascript)
+         * [PANEL COMPONENT - SELECT](#panel-component---select)
+         * [PANEL COMPONENT - BUTTONS AND BOTTOM PANEL](#panel-component---buttons-and-bottom-panel)
+         * [BONUS: MAP COMPONENT - MARKERS](#bonus-map-component---markers)
+   * [CONCLUSION](#conclusion)
+
+Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc)
 
 ---
 
@@ -130,10 +157,13 @@ Step 1. Port over the Panel html to Panel.js and import Panel to Main.js (as a s
 
 You should at this point have a fully recreated UI of Trip Planner done in React, but none of the functionality works yet!
 
+# IMPORTANT NOTE BEFORE SECTION B
+
+Do not get trapped into trying to copy+paste from the old javascript into your new React code. the old javascript relied on updating `state` and creating and destroying DOM components every change you made. In React, `this.state` simply contains your current data state, `render()` renders your JSX according to the data in `this.state`, and the only way you trigger a re-render is by calling `this.setState()` which then calls `render()` again based on your new state. This is called "one way data flow" - you NEVER, EVER, directly manipulate `this.state` anywhere in your code except in the constructor. You only update state with `this.setState`, which allows you to get the benefits of re-rendering and DOM-diffing that you would otherwise have to program manually like you did in the old javascript.
+
+
 SECTION B: PORTING THE JAVASCRIPT
 ---
-
-# IMPORTANT: Do not get trapped into trying to copy+paste from the old javascript into your new React code. the old javascript relied on updating `state` and creating and destroying DOM components every change you made. In React, `this.state` simply contains your current data state, `render()` renders your JSX according to the data in `this.state`, and the only way you trigger a re-render is by calling `this.setState()` which then calls `render()` again based on your new state. This is called "one way data flow" - you NEVER, EVER, directly manipulate `this.state` anywhere in your code except in the constructor. You only update state with `this.setState`, which allows you to get the benefits of re-rendering and DOM-diffing that you would otherwise have to program manually like you did in the old javascript.
 
 ### PANEL COMPONENT - SELECT
 
