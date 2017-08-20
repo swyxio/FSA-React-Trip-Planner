@@ -270,7 +270,7 @@ This part is a bit tricky and not yet covered in the Juke React workshop, but is
 
 Step 1. in `Map.js`, you only need to do one modification: instead of assigning your `new mapboxgl.Map` to a variable called `map`, attach it to the component with `this.map`. Now a parent component can access it with refs!
 
-Step 2. copy and `require("./marker")` into the `client` folder
+Step 2. copy `marker.js` from the `client` folder into `browser`
 
 Step 3. in Main.js, declare `buildMarker` as `require("./marker")`
 
