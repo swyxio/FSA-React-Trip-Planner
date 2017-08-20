@@ -4,7 +4,7 @@ An FSA student-led workshop by [@swyx](http://swyx.io).
 
 Lecture Videos:
 - Section 0 and A: <https://www.youtube.com/watch?v=M6rL0PXxPHs> - is a live coding session with 2 students, a lot happens offscreen sorry
-- Section B: <https://youtu.be/L0xjeFq7IzY> - is a review and demonstration session, so its much more concise!
+- Section B: <https://youtu.be/L0xjeFq7IzY> - is a review and demonstration session, so its much more concise! CORRECTION from the video - binding `this` in the constructor is ACTUALLY better than binding in the render() function because it only binds once rather than every time you render. also read up on [super](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super).
 
 The goal of this project is to familiarize FSA students with React by completely refactoring an old, familiar project to use React.
 
